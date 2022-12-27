@@ -1,0 +1,333 @@
+[ {
+  "line" : 1,
+  "elements" : [ {
+    "start_timestamp" : "2022-12-26T03:11:51.113Z",
+    "line" : 12,
+    "name" : "Verify the POST Employee API",
+    "description" : "",
+    "id" : "verify-the-apis-of-employee-database;verify-the-post-employee-api;;2",
+    "type" : "scenario",
+    "keyword" : "Scenario Outline",
+    "steps" : [ {
+      "result" : {
+        "duration" : 1964000000,
+        "status" : "passed"
+      },
+      "line" : 4,
+      "name" : "\"createEmployee\" payload with Sam, 35000, 30",
+      "match" : {
+        "arguments" : [ {
+          "val" : "createEmployee",
+          "offset" : 1
+        }, {
+          "val" : "Sam",
+          "offset" : 30
+        }, {
+          "val" : "35000",
+          "offset" : 35
+        }, {
+          "val" : "30",
+          "offset" : 42
+        } ],
+        "location" : "stepDefinitions.StepDefinitions.something_payload_with_(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+      },
+      "keyword" : "Given "
+    }, {
+      "result" : {
+        "duration" : 4906000000,
+        "status" : "passed"
+      },
+      "line" : 5,
+      "name" : "user calls \"createEmployee\" with \"Post\" http request",
+      "match" : {
+        "arguments" : [ {
+          "val" : "createEmployee",
+          "offset" : 12
+        }, {
+          "val" : "Post",
+          "offset" : 34
+        } ],
+        "location" : "stepDefinitions.StepDefinitions.user_calls_something_with_something_http_request(java.lang.String,java.lang.String)"
+      },
+      "keyword" : "When "
+    }, {
+      "result" : {
+        "duration" : 10000000,
+        "status" : "passed"
+      },
+      "line" : 6,
+      "name" : "the API call got success with status code 200",
+      "match" : {
+        "location" : "stepDefinitions.StepDefinitions.the_api_call_got_success_with_status_code_200()"
+      },
+      "keyword" : "Then "
+    }, {
+      "result" : {
+        "duration" : 1921000000,
+        "status" : "passed"
+      },
+      "line" : 7,
+      "name" : "\"status\" in response body is \"success\"",
+      "match" : {
+        "arguments" : [ {
+          "val" : "status",
+          "offset" : 1
+        }, {
+          "val" : "success",
+          "offset" : 30
+        } ],
+        "location" : "stepDefinitions.StepDefinitions.something_in_response_body_is_something(java.lang.String,java.lang.String)"
+      },
+      "keyword" : "And "
+    } ]
+  }, {
+    "start_timestamp" : "2022-12-26T03:11:59.973Z",
+    "line" : 24,
+    "name" : "Verify the GET Employee API",
+    "description" : "",
+    "id" : "verify-the-apis-of-employee-database;verify-the-get-employee-api;;2",
+    "type" : "scenario",
+    "keyword" : "Scenario Outline",
+    "steps" : [ {
+      "result" : {
+        "duration" : 12000000,
+        "status" : "passed"
+      },
+      "line" : 16,
+      "name" : "pass the employee 400 to \"get\" the employee record",
+      "match" : {
+        "arguments" : [ {
+          "val" : "400",
+          "offset" : 18
+        }, {
+          "val" : "get",
+          "offset" : 26
+        } ],
+        "location" : "stepDefinitions.StepDefinitions.pass_the_employee_to_something_the_employee_record(java.lang.String,java.lang.String)"
+      },
+      "keyword" : "Given "
+    }, {
+      "result" : {
+        "duration" : 296000000,
+        "status" : "passed"
+      },
+      "line" : 17,
+      "name" : "user calls \"getEmployee\" with \"get\" http request",
+      "match" : {
+        "arguments" : [ {
+          "val" : "getEmployee",
+          "offset" : 12
+        }, {
+          "val" : "get",
+          "offset" : 31
+        } ],
+        "location" : "stepDefinitions.StepDefinitions.user_calls_something_with_something_http_request(java.lang.String,java.lang.String)"
+      },
+      "keyword" : "When "
+    }, {
+      "result" : {
+        "status" : "passed"
+      },
+      "line" : 18,
+      "name" : "the API call got success with status code 200",
+      "match" : {
+        "location" : "stepDefinitions.StepDefinitions.the_api_call_got_success_with_status_code_200()"
+      },
+      "keyword" : "Then "
+    }, {
+      "result" : {
+        "duration" : 23000000,
+        "status" : "passed"
+      },
+      "line" : 19,
+      "name" : "\"message\" in response body is \"Successfully! Record has been fetched.\"",
+      "match" : {
+        "arguments" : [ {
+          "val" : "message",
+          "offset" : 1
+        }, {
+          "val" : "Successfully! Record has been fetched.",
+          "offset" : 31
+        } ],
+        "location" : "stepDefinitions.StepDefinitions.something_in_response_body_is_something(java.lang.String,java.lang.String)"
+      },
+      "keyword" : "And "
+    } ]
+  }, {
+    "start_timestamp" : "2022-12-26T03:12:00.311Z",
+    "line" : 39,
+    "name" : "Verify the PUT Employee API",
+    "description" : "",
+    "id" : "verify-the-apis-of-employee-database;verify-the-put-employee-api;;2",
+    "type" : "scenario",
+    "keyword" : "Scenario Outline",
+    "steps" : [ {
+      "result" : {
+        "duration" : 5000000,
+        "status" : "passed"
+      },
+      "line" : 31,
+      "name" : "updateEmployee payload with Mangu, 340000, 28 and Pass 400 to update the employee",
+      "match" : {
+        "arguments" : [ {
+          "val" : "Mangu",
+          "offset" : 28
+        }, {
+          "val" : "340000",
+          "offset" : 35
+        }, {
+          "val" : "28",
+          "offset" : 43
+        }, {
+          "val" : "400",
+          "offset" : 55
+        } ],
+        "location" : "stepDefinitions.StepDefinitions.updateemployee_payload_with_and_pass_to_update_the_employee(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+      },
+      "keyword" : "Given "
+    }, {
+      "result" : {
+        "duration" : 1136000000,
+        "status" : "passed"
+      },
+      "line" : 32,
+      "name" : "user calls \"updateEmployee\" with \"Put\" http request",
+      "match" : {
+        "arguments" : [ {
+          "val" : "updateEmployee",
+          "offset" : 12
+        }, {
+          "val" : "Put",
+          "offset" : 34
+        } ],
+        "location" : "stepDefinitions.StepDefinitions.user_calls_something_with_something_http_request(java.lang.String,java.lang.String)"
+      },
+      "keyword" : "When "
+    }, {
+      "result" : {
+        "status" : "passed"
+      },
+      "line" : 33,
+      "name" : "the API call got success with status code 200",
+      "match" : {
+        "location" : "stepDefinitions.StepDefinitions.the_api_call_got_success_with_status_code_200()"
+      },
+      "keyword" : "Then "
+    }, {
+      "result" : {
+        "duration" : 30000000,
+        "status" : "passed"
+      },
+      "line" : 34,
+      "name" : "\"status\" in response body is \"success\"",
+      "match" : {
+        "arguments" : [ {
+          "val" : "status",
+          "offset" : 1
+        }, {
+          "val" : "success",
+          "offset" : 30
+        } ],
+        "location" : "stepDefinitions.StepDefinitions.something_in_response_body_is_something(java.lang.String,java.lang.String)"
+      },
+      "keyword" : "And "
+    }, {
+      "result" : {
+        "duration" : 18000000,
+        "status" : "passed"
+      },
+      "line" : 35,
+      "name" : "\"message\" in response body is \"Successfully! Record has been updated.\"",
+      "match" : {
+        "arguments" : [ {
+          "val" : "message",
+          "offset" : 1
+        }, {
+          "val" : "Successfully! Record has been updated.",
+          "offset" : 31
+        } ],
+        "location" : "stepDefinitions.StepDefinitions.something_in_response_body_is_something(java.lang.String,java.lang.String)"
+      },
+      "keyword" : "And "
+    } ]
+  }, {
+    "start_timestamp" : "2022-12-26T03:12:01.507Z",
+    "line" : 50,
+    "name" : "Verify the DELETE Employee API",
+    "description" : "",
+    "id" : "verify-the-apis-of-employee-database;verify-the-delete-employee-api;;2",
+    "type" : "scenario",
+    "keyword" : "Scenario Outline",
+    "steps" : [ {
+      "result" : {
+        "duration" : 2000000,
+        "status" : "passed"
+      },
+      "line" : 43,
+      "name" : "pass the employee 300 to \"delete\" the employee record",
+      "match" : {
+        "arguments" : [ {
+          "val" : "300",
+          "offset" : 18
+        }, {
+          "val" : "delete",
+          "offset" : 26
+        } ],
+        "location" : "stepDefinitions.StepDefinitions.pass_the_employee_to_something_the_employee_record(java.lang.String,java.lang.String)"
+      },
+      "keyword" : "Given "
+    }, {
+      "result" : {
+        "duration" : 1148000000,
+        "status" : "passed"
+      },
+      "line" : 44,
+      "name" : "user calls \"deleteEmployee\" with \"delete\" http request",
+      "match" : {
+        "arguments" : [ {
+          "val" : "deleteEmployee",
+          "offset" : 12
+        }, {
+          "val" : "delete",
+          "offset" : 34
+        } ],
+        "location" : "stepDefinitions.StepDefinitions.user_calls_something_with_something_http_request(java.lang.String,java.lang.String)"
+      },
+      "keyword" : "When "
+    }, {
+      "result" : {
+        "status" : "passed"
+      },
+      "line" : 45,
+      "name" : "the API call got success with status code 200",
+      "match" : {
+        "location" : "stepDefinitions.StepDefinitions.the_api_call_got_success_with_status_code_200()"
+      },
+      "keyword" : "Then "
+    }, {
+      "result" : {
+        "duration" : 15000000,
+        "status" : "passed"
+      },
+      "line" : 46,
+      "name" : "\"message\" in response body is \"Successfully! Record has been deleted\"",
+      "match" : {
+        "arguments" : [ {
+          "val" : "message",
+          "offset" : 1
+        }, {
+          "val" : "Successfully! Record has been deleted",
+          "offset" : 31
+        } ],
+        "location" : "stepDefinitions.StepDefinitions.something_in_response_body_is_something(java.lang.String,java.lang.String)"
+      },
+      "keyword" : "And "
+    } ]
+  } ],
+  "name" : "Verify the APIs of Employee DataBase",
+  "description" : "",
+  "id" : "verify-the-apis-of-employee-database",
+  "keyword" : "Feature",
+  "uri" : "file:src/test/java/features/employeeData.feature",
+  "tags" : [ ]
+} ]

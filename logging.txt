@@ -1,0 +1,171 @@
+Request method:	POST
+Request URI:	https://dummy.restapiexample.com/api/v1/create
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Sam",
+    "salary": "35000",
+    "age": "30"
+}
+HTTP/1.1 200 OK
+Cache-Control: no-cache, private, max-age=21600
+Content-Type: application/json
+Date: Mon, 26 Dec 2022 03:11:56 GMT
+Display: staticcontent_sol, orig_site_sol
+Expires: Mon, 26 Dec 2022 09:11:56 GMT
+Host-Header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
+Response: 200
+Server: Apache
+Vary: Accept-Encoding,Origin
+X-Endurance-Cache-Level: 2
+X-Ezoic-Cdn: Miss
+X-Middleton-Display: staticcontent_sol, orig_site_sol
+X-Middleton-Response: 200
+X-Nginx-Cache: WordPress
+X-Origin-Cache-Control: no-cache, private
+X-Ratelimit-Limit: 60
+X-Ratelimit-Remaining: 58
+X-Sol: orig
+Content-Length: 129
+
+{
+    "status": "success",
+    "data": {
+        "name": "Sam",
+        "salary": "35000",
+        "age": "30",
+        "id": 5926
+    },
+    "message": "Successfully! Record has been added."
+}
+Request method:	GET
+Request URI:	https://dummy.restapiexample.com/api/v1/employee/400
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=400
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Cache-Control: public, max-age=2592000
+Content-Type: application/json
+Date: Mon, 26 Dec 2022 03:11:59 UTC
+Display: staticcontent_sol, orig_site_sol
+Host-Header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
+Response: 200
+Server: nginx/1.21.6
+Vary: Accept-Encoding,User-Agent,Origin
+X-Endurance-Cache-Level: 2
+X-Ezoic-Cdn: Hit ds;mm;14b6a87a66d4dc38c11d0fbeb4d2b062;2-133674-12;27e4cf66-6ce3-4dbc-7cce-4527087f4478
+X-Middleton-Display: staticcontent_sol, orig_site_sol
+X-Middleton-Response: 200
+X-Nginx-Cache: WordPress
+X-Origin-Cache-Control: no-cache, private
+X-Ratelimit-Limit: 60
+X-Ratelimit-Remaining: 58
+X-Server-Cache: false
+X-Sol: orig
+Content-Length: 83
+
+{
+    "status": "success",
+    "data": null,
+    "message": "Successfully! Record has been fetched."
+}
+Request method:	PUT
+Request URI:	https://dummy.restapiexample.com/api/v1/update/400
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=400
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Mangu",
+    "salary": "340000",
+    "age": "28"
+}
+HTTP/1.1 200 OK
+Cache-Control: no-cache, private, max-age=21600
+Content-Type: application/json
+Date: Mon, 26 Dec 2022 03:12:00 GMT
+Display: staticcontent_sol, orig_site_sol
+Expires: Mon, 26 Dec 2022 09:12:00 GMT
+Host-Header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
+Response: 200
+Server: Apache
+Vary: Accept-Encoding,Origin
+X-Endurance-Cache-Level: 2
+X-Ezoic-Cdn: Miss
+X-Middleton-Display: staticcontent_sol, orig_site_sol
+X-Middleton-Response: 200
+X-Nginx-Cache: WordPress
+X-Origin-Cache-Control: no-cache, private
+X-Ratelimit-Limit: 60
+X-Ratelimit-Remaining: 58
+X-Sol: orig
+Content-Length: 124
+
+{
+    "status": "success",
+    "data": {
+        "name": "Mangu",
+        "salary": "340000",
+        "age": "28"
+    },
+    "message": "Successfully! Record has been updated."
+}
+Request method:	DELETE
+Request URI:	https://dummy.restapiexample.com/api/v1/delete/300
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=300
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Cache-Control: no-cache, private, max-age=21600
+Content-Type: application/json
+Date: Mon, 26 Dec 2022 03:12:01 GMT
+Display: staticcontent_sol, orig_site_sol
+Expires: Mon, 26 Dec 2022 09:12:01 GMT
+Host-Header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
+Response: 200
+Server: Apache
+Vary: Accept-Encoding,Origin
+X-Endurance-Cache-Level: 2
+X-Ezoic-Cdn: Miss
+X-Middleton-Display: staticcontent_sol, orig_site_sol
+X-Middleton-Response: 200
+X-Nginx-Cache: WordPress
+X-Origin-Cache-Control: no-cache, private
+X-Ratelimit-Limit: 60
+X-Ratelimit-Remaining: 58
+X-Sol: orig
+Content-Length: 83
+
+{
+    "status": "success",
+    "data": "300",
+    "message": "Successfully! Record has been deleted"
+}
